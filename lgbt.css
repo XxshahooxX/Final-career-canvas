@@ -1,0 +1,371 @@
+:root {
+  background-color: rgb(rgb(180, 84, 5), green, blue);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+#particles-js {
+  width: 100%;
+  height: 100vh;
+  background-image: url(assets/gradient_blur_abstraction_195121_1920x1200.jpg);
+  position: absolute;
+}
+.hero-image {
+  position: absolute;
+  margin-top: 25%;
+  margin-right: 50px;
+  margin-left: 750px;
+  scale: 1.4;
+  rotate: 270deg;
+  transition: 1s;
+  transition: ease-in-out;
+  z-index: 1;
+}
+
+.background-gradient02 {
+  margin-top: 56.5%;
+  rotate: 180deg;
+  overflow: hidden;
+  background-position: cover;
+}
+
+h1,
+p {
+  position: relative; /* Ensures the text is positioned on top of the background */
+  z-index: 1; /* Brings the text in front of the background image */
+}
+
+.Career-canvas-Header {
+  position: absolute;
+  color: rgb(0, 0, 0);
+  margin-left: 470px;
+  margin-top: 10vh;
+  font-size: 10rem;
+}
+
+.subheading {
+  position: absolute;
+  margin-top: 300px;
+  color: rgb(0, 0, 0);
+  padding-left: 720px;
+  text-decoration: underline;
+  font-weight: bolder;
+  font-size: 2rem;
+}
+
+.heading-para-1 {
+  background-color: #141414;
+  position: absolute;
+  margin-top: 1050px;
+  color: rgb(255, 255, 255);
+  padding-left: 5%;
+  padding-right: 42.1%;
+  font-weight: bolder;
+  font-size: 5rem;
+  text-align: center;
+}
+
+.paragraph-1 {
+  position: absolute;
+  align-items: center;
+  margin-left: 120px;
+  margin-top: 1250px;
+  font-size: 1.9rem;
+  font-weight: 600;
+  text-align: center;
+  line-height: 50px;
+}
+
+.heading-para-2 {
+  background-color: #141414;
+  position: absolute;
+  margin-top: 1650px;
+  color: rgb(255, 255, 255);
+  padding-left: 5%;
+  padding-right: 39.3%;
+  font-weight: bolder;
+  font-size: 5rem;
+}
+
+.paragraph-2 {
+  position: absolute;
+  margin: 0%;
+  margin-top: 1800px;
+  margin-left: 5%;
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-align: center;
+  line-height: 50px;
+}
+
+.content {
+  position: relative;
+  color: rgb(0, 0, 0);
+  margin-right: 0px; /* Width of the navbar */
+  padding: 0px;
+  margin: 0%;
+}
+
+.navbar {
+  position: -webkit-sticky; /* For Safari */
+  position: absolute;
+  top: 50vh;
+  left: 89%;
+  margin-right: 20px;
+  width: 200px;
+  background-color: #00000000;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.navbar li {
+  width: 100%;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.navbar a {
+  display: block;
+  padding: 10px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  background-color: #141414;
+  border-radius: 50px;
+  transition: background-color 0.5s;
+  font-weight: bolder;
+}
+
+.navbar a:hover {
+  background-color: #ffffff;
+  color: black;
+  transition: 0.5s;
+  transition: ease-in-out;
+  font-weight: 400px;
+  font-weight: bolder;
+}
+/* 
+,
+,
+,
+,
+,
+,
+, */
+/* Yahan Card 1 Ki CSS Ha   */
+.First_card {
+  position: absolute;
+  margin-left: 100px;
+  margin-top: 2%;
+  width: 400px;
+  height: 600px;
+  margin-bottom: 2%;
+  background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100%);
+  border-radius: 10px;
+  display: flex;
+  /* flex-direction: row; */
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.First_card svg {
+  width: 48px;
+  fill: #333;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.First_card:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.First_card__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #fff;
+  opacity: 0;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.First_card:hover .First_card__content {
+  transform: translate(-50%, -50%) rotate(0deg);
+  opacity: 1;
+}
+
+.First_card__title {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+  font-weight: 700;
+}
+
+.First_card__description {
+  margin: 10px 0 0;
+  font-size: 14px;
+  color: #777;
+  line-height: 1.4;
+}
+
+.First_card:hover svg {
+  scale: 0;
+  transform: rotate(-45deg);
+}
+/* ,
+,
+,
+,
+,
+--------------------------Second card---------------------------------
+,
+,
+, */
+.Second_card {
+  position: absolute;
+  margin-left: 800px;
+  margin-top: 2%;
+  width: 400px;
+  height: 600px;
+  background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100%);
+  border-radius: 10px;
+  display: flex;
+  /* flex-direction: row; */
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.Second_card svg {
+  width: 48px;
+  fill: #333;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.Second_card:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.Second_card__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #fff;
+  opacity: 0;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.Second_card:hover .Second_card__content {
+  transform: translate(-50%, -50%) rotate(0deg);
+  opacity: 1;
+}
+
+.Second_card__title {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+  font-weight: 700;
+}
+
+.Second_card__description {
+  margin: 10px 0 0;
+  font-size: 14px;
+  color: #777;
+  line-height: 1.4;
+}
+
+.Second_card:hover svg {
+  scale: 0;
+  transform: rotate(-45deg);
+}
+/* ,
+,
+,
+,
+--------------------------------------Third Card------------------------------
+,
+,
+, */
+/* From Uiverse.io by Dailleer */
+.Third_card {
+  position: absolute;
+  margin-left: 1400px;
+  margin-top: 2%;
+  width: 400px;
+  height: 600px;
+  background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100%);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.Third_card svg {
+  width: 48px;
+  fill: #333;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.Third_card:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.Third_card__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #fff;
+  opacity: 0;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.Third_card:hover .Third_card__content {
+  transform: translate(-50%, -50%) rotate(0deg);
+  opacity: 1;
+}
+
+.Third_card__title {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+  font-weight: 700;
+}
+
+.Third_card__description {
+  margin: 10px 0 0;
+  font-size: 14px;
+  color: #777;
+  line-height: 1.4;
+}
+
+.Third_card:hover svg {
+  scale: 0;
+  transform: rotate(-45deg);
+}
